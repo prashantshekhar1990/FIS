@@ -27,7 +27,7 @@ public class APISteps {
     @And("^user make a get call to \"(.*)\"$")
     public void getCall(String endpoint) {
         Response response = APICalls.testGetCall(endpoint);
-        _testContext.setJsonResponse( response);
+        _testContext.setJsonResponse(response);
     }
 
     @And("^user verify \"(.*)\" has \"(.*)\" objects$")
