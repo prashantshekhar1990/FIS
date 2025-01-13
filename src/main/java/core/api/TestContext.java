@@ -13,6 +13,7 @@ public class TestContext {
         driverFactory = new DriverFactory();
         pageObjectManager = new PageObjectManager(driverFactory.getDriver());
     }
+
     public io.restassured.response.Response getJsonResponse() {
         return jsonResponse;
     }
